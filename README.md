@@ -3,7 +3,7 @@
 Meditations by Marcus Aurelius, translated by George Long. This book is in the public domain.
 
 
-- []Read online](https://toanrb.github.io/meditations-george-long)
+- [Read online](https://toanrb.github.io/meditations-george-long)
 - Download: [EPUB](https://toanrb.github.io/meditations-george-long/Marcus+Aurelius+-+Meditations+(Translated+by+George+Long).epub)
 
 
