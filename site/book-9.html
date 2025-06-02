@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Book Nine – The Meditations</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./book-10.html" rel="next">
+<link href="./book-8.html" rel="prev">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3e51e3f0b066a9c5775ba87e59b334ee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6a590a18e963956f368295a22746b35c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./book-9.html">Book Nine</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Meditations</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
+</div>
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book One</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Two</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Three</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Four</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Five</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Six</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Seven</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Eight</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-9.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Book Nine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Ten</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Eleven</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./book-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Book Twelve</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="book-9" class="quarto-section-identifier">Book Nine</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="1" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="1">1</h2>
+<p>He ho acts unjustly acts impiously. For since the universal nature has made rational animals for the sake of one another to help one another according to their deserts, but in no way to injure one another, he who transgresses her will, is clearly guilty of impiety towards the highest divinity. And he too who lies is guilty of impiety to the same divinity; for the universal nature is the nature of things that are; and things that are have a relation to all things that come into existence. And further, this universal nature is named truth, and is the prime cause of all things that are true. He then who lies intentionally is guilty of impiety inasmuch as he acts unjustly by deceiving; and he also who lies unintentionally, inasmuch as he is at variance with the universal nature, and inasmuch as he disturbs the order by fighting against the nature of the world; for he fights against it, who is moved of himself to that which is contrary to truth, for he had received powers from nature through the neglect of which he is not able now to distinguish falsehood from truth. And indeed he who pursues pleasure as good, and avoids pain as evil, is guilty of impiety. For of necessity such a man must often find fault with the universal nature, alleging that it assigns things to the bad and the good contrary to their deserts, because frequently the bad are in the enjoyment of pleasure and possess the things which procure pleasure, but the good have pain for their share and the things which cause pain. And further, he who is afraid of pain will sometimes also be afraid of some of the things which will happen in the world, and even this is impiety. And he who pursues pleasure will not abstain from injustice, and this is plainly impiety. Now with respect to the things towards which the universal nature is equally affected—for it would not have made both, unless it was equally affected towards both—towards these they who wish to follow nature should be of the same mind with it, and equally affected. With respect to pain, then, and pleasure, or death and life, or honour and dishonour, which the universal nature employs equally, whoever is not equally affected is manifestly acting impiously. And I say that the universal nature employs them equally, instead of saying that they happen alike to those who are produced in continuous series and to those who come after them by virtue of a certain original movement of Providence, according to which it moved from a certain beginning to this ordering of things, having conceived certain principles of the things which were to be, and having determined powers productive of beings and of changes and of such like successions.</p>
+</section>
+<section id="2" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="2">2</h2>
+<p>It would be a man’s happiest lot to depart from mankind without having had any taste of lying and hypocrisy and luxury and pride. However to breathe out one’s life when a man has had enough of these things is the next best voyage, as the saying is. Hast thou determined to abide with vice, and has not experience yet induced thee to fly from this pestilence? For the destruction of the understanding is a pestilence, much more indeed than any such corruption and change of this atmosphere which surrounds us. For this corruption is a pestilence of animals so far as they are animals; but the other is a pestilence of men so far as they are men.</p>
+</section>
+<section id="3" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="3">3</h2>
+<p>Do not despise death, but be well content with it, since this too is one of those things which nature wills. For such as it is to be young and to grow old, and to increase and to reach maturity, and to have teeth and beard and grey hairs, and to beget, and to be pregnant and to bring forth, and all the other natural operations which the seasons of thy life bring, such also is dissolution. This, then, is consistent with the character of a reflecting man, to be neither careless nor impatient nor contemptuous with respect to death, but to wait for it as one of the operations of nature. As thou now waitest for the time when the child shall come out of thy wife’s womb, so be ready for the time when thy soul shall fall out of this envelope. But if thou requirest also a vulgar kind of comfort which shall reach thy heart, thou wilt be made best reconciled to death by observing the objects from which thou art going to be removed, and the morals of those with whom thy soul will no longer be mingled. For it is no way right to be offended with men, but it is thy duty to care for them and to bear with them gently; and yet to remember that thy departure will be not from men who have the same principles as thyself. For this is the only thing, if there be any, which could draw us the contrary way and attach us to life, to be permitted to live with those who have the same principles as ourselves. But now thou seest how great is the trouble arising from the discordance of those who live together, so that thou mayest say, Come quick, O death, lest perchance I, too, should forget myself.</p>
+</section>
+<section id="4" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="4">4</h2>
+<p>He who does wrong does wrong against himself. He who acts unjustly acts unjustly to himself, because he makes himself bad.</p>
+</section>
+<section id="5" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="5">5</h2>
+<p>He often acts unjustly who does not do a certain thing; not only he who does a certain thing.</p>
+</section>
+<section id="6" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="6">6</h2>
+<p>Thy present opinion founded on understanding, and thy present conduct directed to social good, and thy present disposition of contentment with everything which happens—that is enough.</p>
+</section>
+<section id="7" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="7">7</h2>
+<p>Wipe out imagination: check desire: extinguish appetite: keep the ruling faculty in its own power.</p>
+</section>
+<section id="8" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="8">8</h2>
+<p>Among the animals which have not reason one life is distributed; but among reasonable animals one intelligent soul is distributed: just as there is one earth of all things which are of an earthy nature, and we see by one light, and breathe one air, all of us that have the faculty of vision and all that have life.</p>
+</section>
+<section id="9" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="9">9</h2>
+<p>All things which participate in anything which is common to them all move towards that which is of the same kind with themselves. Everything which is earthy turns towards the earth, everything which is liquid flows together, and everything which is of an aerial kind does the same, so that they require something to keep them asunder, and the application of force. Fire indeed moves upwards on account of the elemental fire, but it is so ready to be kindled together with all the fire which is here, that even every substance which is somewhat dry, is easily ignited, because there is less mingled with it of that which is a hindrance to ignition. Accordingly then everything also which participates in the common intelligent nature moves in like manner towards that which is of the same kind with itself, or moves even more. For so much as it is superior in comparison with all other things, in the same degree also is it more ready to mingle with and to be fused with that which is akin to it. Accordingly among animals devoid of reason we find swarms of bees, and herds of cattle, and the nurture of young birds, and in a manner, loves; for even in animals there are souls, and that power which brings them together is seen to exert itself in the superior degree, and in such a way as never has been observed in plants nor in stones nor in trees. But in rational animals there are political communities and friendships, and families and meetings of people; and in wars, treaties and armistices. But in the things which are still superior, even though they are separated from one another, unity in a manner exists, as in the stars. Thus the ascent to the higher degree is able to produce a sympathy even in things which are separated. See, then, what now takes place. For only intelligent animals have now forgotten this mutual desire and inclination, and in them alone the property of flowing together is not seen. But still though men strive to avoid this union, they are caught and held by it, for their nature is too strong for them; and thou wilt see what I say, if thou only observest. Sooner, then, will one find anything earthy which comes in contact with no earthy thing than a man altogether separated from other men.</p>
+</section>
+<section id="10" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="10">10</h2>
+<p>Both man and God and the universe produce fruit; at the proper seasons each produces it. But if usage has especially fixed these terms to the vine and like things, this is nothing. Reason produces fruit both for all and for itself, and there are produced from it other things of the same kind as reason itself.</p>
+</section>
+<section id="11" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="11">11</h2>
+<p>If thou art able, correct by teaching those who do wrong; but if thou canst not, remember that indulgence is given to thee for this purpose. And the gods, too, are indulgent to such persons; and for some purposes they even help them to get health, wealth, reputation; so kind they are. And it is in thy power also; or say, who hinders thee?</p>
+</section>
+<section id="12" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="12">12</h2>
+<p>Labour not as one who is wretched, nor yet as one who would be pitied or admired: but direct thy will to one thing only, to put thyself in motion and to check thyself, as the social reason requires.</p>
+</section>
+<section id="13" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="13">13</h2>
+<p>To-day I have got out of all trouble, or rather I have cast out all trouble, for it was not outside, but within and in my opinions.</p>
+</section>
+<section id="14" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="14">14</h2>
+<p>All things are the same, familiar in experience, and ephemeral in time, and worthless in the matter. Everything now is just as it was in the time of those whom we have buried.</p>
+</section>
+<section id="15" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="15">15</h2>
+<p>Things stand outside of us, themselves by themselves, neither knowing aught of themselves, nor expressing any judgement. What is it, then, which does judge about them? The ruling faculty.</p>
+</section>
+<section id="16" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="16">16</h2>
+<p>Not in passivity, but in activity lie the evil and the good of the rational social animal, just as his virtue and his vice lie not in passivity, but in activity.</p>
+</section>
+<section id="17" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="17">17</h2>
+<p>For the stone which has been thrown up it is no evil to come down, nor indeed any good to have been carried up.</p>
+</section>
+<section id="18" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="18">18</h2>
+<p>Penetrate inwards into men’s leading principles, and thou wilt see what judges thou art afraid of, and what kind of judges they are of themselves.</p>
+</section>
+<section id="19" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="19">19</h2>
+<p>All things are changing: and thou thyself art in continuous mutation and in a manner in continuous destruction, and the whole universe too.</p>
+</section>
+<section id="20" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="20">20</h2>
+<p>It is thy duty to leave another man’s wrongful act there where it is.</p>
+</section>
+<section id="21" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="21">21</h2>
+<p>Termination of activity, cessation from movement and opinion, and in a sense their death, is no evil. Turn thy thoughts now to the consideration of thy life, thy life as a child, as a youth, thy manhood, thy old age, for in these also every change was a death. Is this anything to fear? Turn thy thoughts now to thy life under thy grandfather, then to thy life under thy mother, then to thy life under thy father; and as thou findest many other differences and changes and terminations, ask thyself, Is this anything to fear? In like manner, then, neither are the termination and cessation and change of thy whole life a thing to be afraid of.</p>
+</section>
+<section id="22" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="22">22</h2>
+<p>Hasten to examine thy own ruling faculty and that of the universe and that of thy neighbour: thy own that thou mayest make it just: and that of the universe, that thou mayest remember of what thou art a part; and that of thy neighbour, that thou mayest know whether he has acted ignorantly or with knowledge, and that thou mayest also consider that his ruling faculty is akin to thine.</p>
+</section>
+<section id="23" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="23">23</h2>
+<p>As thou thyself art a component part of a social system, so let every act of thine be a component part of social life. Whatever act of thine then has no reference either immediately or remotely to a social end, this tears asunder thy life, and does not allow it to be one, and it is of the nature of a mutiny, just as when in a popular assembly a man acting by himself stands apart from the general agreement.</p>
+</section>
+<section id="24" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="24">24</h2>
+<p>Quarrels of little children and their sports, and poor spirits carrying about dead bodies, such is everything; and so what is exhibited in the representation of the mansions of the dead strikes our eyes more clearly.</p>
+</section>
+<section id="25" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="25">25</h2>
+<p>Examine into the quality of the form of an object, and detach it altogether from its material part, and then contemplate it; then determine the time, the longest which a thing of this peculiar form is naturally made to endure.</p>
+</section>
+<section id="26" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="26">26</h2>
+<p>Thou hast endured infinite troubles through not being contented with thy ruling faculty, when it does the things which it is constituted by nature to do. But enough of this.</p>
+</section>
+<section id="27" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="27">27</h2>
+<p>When another blames thee or hates thee, or when men say about thee anything injurious, approach their poor souls, penetrate within, and see what kind of men they are. Thou wilt discover that there is no reason to take any trouble that these men may have this or that opinion about thee. However thou must be well disposed towards them, for by nature they are friends. And the gods too aid them in all ways, by dreams, by signs, towards the attainment of those things on which they set a value.</p>
+</section>
+<section id="28" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="28">28</h2>
+<p>The periodic movements of the universe are the same, up and down from age to age. And either the universal intelligence puts itself in motion for every separate effect, and if this is so, be thou content with that which is the result of its activity; or it puts itself in motion once, and everything else comes by way of sequence in a manner; or indivisible elements are the origin of all things.—In a word, if there is a god, all is well; and if chance rules, do not thou also be governed by it.</p>
+<p>Soon will the earth cover us all: then the earth, too, will change, and the things also which result from change will continue to change for ever, and these again for ever. For if a man reflects on the changes and transformations which follow one another like wave after wave and their rapidity, he will despise everything which is perishable.</p>
+</section>
+<section id="29" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="29">29</h2>
+<p>The universal cause is like a winter torrent: it carries everything along with it. But how worthless are all these poor people who are engaged in matters political, and, as they suppose, are playing the philosopher! All drivellers. Well then, man: do what nature now requires. Set thyself in motion, if it is in thy power, and do not look about thee to see if any one will observe it; nor yet expect Plato’s Republic: but be content if the smallest thing goes on well, and consider such an event to be no small matter. For who can change men’s opinions? And without a change of opinions what else is there than the slavery of men who groan while they pretend to obey? Come now and tell me of Alexander and Philip and Demetrius of Phalerum. They themselves shall judge whether they discovered what the common nature required, and trained themselves accordingly. But if they acted like tragedy heroes, no one has condemned me to imitate them. Simple and modest is the work of philosophy. Draw me not aside to indolence and pride.</p>
+</section>
+<section id="30" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="30">30</h2>
+<p>Look down from above on the countless herds of men and their countless solemnities, and the infinitely varied voyagings in storms and calms, and the differences among those who are born, who live together, and die. And consider, too, the life lived by others in olden time, and the life of those who will live after thee, and the life now lived among barbarous nations, and how many know not even thy name, and how many will soon forget it, and how they who perhaps now are praising thee will very soon blame thee, and that neither a posthumous name is of any value, nor reputation, nor anything else.</p>
+</section>
+<section id="31" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="31">31</h2>
+<p>Let there be freedom from perturbations with respect to the things which come from the external cause; and let there be justice in the things done by virtue of the internal cause, that is, let there be movement and action terminating in this, in social acts, for this is according to thy nature.</p>
+</section>
+<section id="32" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="32">32</h2>
+<p>Thou canst remove out of the way many useless things among those which disturb thee, for they lie entirely in thy opinion; and thou wilt then gain for thyself ample space by comprehending the whole universe in thy mind, and by contemplating the eternity of time, and observing the rapid change of every several thing, how short is the time from birth to dissolution, and the illimitable time before birth as well as the equally boundless time after dissolution.</p>
+</section>
+<section id="33" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="33">33</h2>
+<p>All that thou seest will quickly perish, and those who have been spectators of its dissolution will very soon perish too. And he who dies at the extremest old age will be brought into the same condition with him who died prematurely.</p>
+</section>
+<section id="34" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="34">34</h2>
+<p>What are these men’s leading principles, and about what kind of things are they busy, and for what kind of reasons do they love and honour? Imagine that thou seest their poor souls laid bare. When they think that they do harm by their blame or good by their praise, what an idea!</p>
+</section>
+<section id="35" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="35">35</h2>
+<p>Loss is nothing else than change. But the universal nature delights in change, and in obedience to her all things are now done well, and from eternity have been done in like form, and will be such to time without end. What, then, dost thou say? That all things have been and all things always will be bad, and that no power has ever been found in so many gods to rectify these things, but the world has been condemned to be found in never ceasing evil?</p>
+</section>
+<section id="36" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="36">36</h2>
+<p>The rottenness of the matter which is the foundation of everything! Water, dust, bones, filth: or again, marble rocks, the callosities of the earth; and gold and silver, the sediments; and garments, only bits of hair; and purple dye, blood; and everything else is of the same kind. And that which is of the nature of breath is also another thing of the same kind, changing from this to that.</p>
+</section>
+<section id="37" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="37">37</h2>
+<p>Enough of this wretched life and murmuring and apish tricks. Why art thou disturbed? What is there new in this? What unsettles thee? Is it the form of the thing? Look at it. Or is it the matter? Look at it. But besides these there is nothing. Towards the gods, then, now become at last more simple and better. It is the same whether we examine these things for a hundred years or three.</p>
+</section>
+<section id="38" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="38">38</h2>
+<p>If any man has done wrong, the harm is his own. But perhaps he has not done wrong.</p>
+</section>
+<section id="39" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="39">39</h2>
+<p>Either all things proceed from one intelligent source and come together as in one body, and the part ought not to find fault with what is done for the benefit of the whole; or there are only atoms, and nothing else than mixture and dispersion. Why, then, art thou disturbed? Say to the ruling faculty, Art thou dead, art thou corrupted, art thou playing the hypocrite, art thou become a beast, dost thou herd and feed with the rest?</p>
+</section>
+<section id="40" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="40">40</h2>
+<p>Either the gods have no power or they have power. If, then, they have no power, why dost thou pray to them? But if they have power, why dost thou not pray for them to give thee the faculty of not fearing any of the things which thou fearest, or of not desiring any of the things which thou desirest, or not being pained at anything, rather than pray that any of these things should not happen or happen? for certainly if they can co-operate with men, they can co-operate for these purposes. But perhaps thou wilt say, the gods have placed them in thy power. Well, then, is it not better to use what is in thy power like a free man than to desire in a slavish and abject way what is not in thy power? And who has told thee that the gods do not aid us even in the things which are in our power? Begin, then, to pray for such things, and thou wilt see. One man prays thus: How shall I be able to lie with that woman? Do thou pray thus: How shall I not desire to lie with her? Another prays thus: How shall I be released from this? Another prays: How shall I not desire to be released? Another thus: How shall I not lose my little son? Thou thus: How shall I not be afraid to lose him? In fine, turn thy prayers this way, and see what comes.</p>
+</section>
+<section id="41" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="41">41</h2>
+<p>Epicurus says, In my sickness my conversation was not about my bodily sufferings, nor, says he, did I talk on such subjects to those who visited me; but I continued to discourse on the nature of things as before, keeping to this main point, how the mind, while participating in such movements as go on in the poor flesh, shall be free from perturbations and maintain its proper good. Nor did I, he says, give the physicians an opportunity of putting on solemn looks, as if they were doing something great, but my life went on well and happily. Do, then, the same that he did both in sickness, if thou art sick, and in any other circumstances; for never to desert philosophy in any events that may befall us, nor to hold trifling talk either with an ignorant man or with one unacquainted with nature, is a principle of all schools of philosophy; but to be intent only on that which thou art now doing and on the instrument by which thou doest it.</p>
+</section>
+<section id="42" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="42">42</h2>
+<p>When thou art offended with any man’s shameless conduct, immediately ask thyself, Is it possible, then, that shameless men should not be in the world? It is not possible. Do not, then, require what is impossible. For this man also is one of those shameless men who must of necessity be in the world. Let the same considerations be present to thy mind in the case of the knave, and the faithless man, and of every man who does wrong in any way. For at the same time that thou dost remind thyself that it is impossible that such kind of men should not exist, thou wilt become more kindly disposed towards every one individually. It is useful to perceive this, too, immediately when the occasion arises, what virtue nature has given to man to oppose to every wrongful act. For she has given to man, as an antidote against the stupid man, mildness, and against another kind of man some other power. And in all cases it is possible for thee to correct by teaching the man who is gone astray; for every man who errs misses his object and is gone astray. Besides wherein hast thou been injured? For thou wilt find that no one among those against whom thou art irritated has done anything by which thy mind could be made worse; but that which is evil to thee and harmful has its foundation only in the mind. And what harm is done or what is there strange, if the man who has not been instructed does the acts of an uninstructed man? Consider whether thou shouldst not rather blame thyself, because thou didst not expect such a man to err in such a way. For thou hadst means given thee by thy reason to suppose that it was likely that he would commit this error, and yet thou hast forgotten and art amazed that he has erred. But most of all when thou blamest a man as faithless or ungrateful, turn to thyself. For the fault is manifestly thy own, whether thou didst trust that a man who had such a disposition would keep his promise, or when conferring thy kindness thou didst not confer it absolutely, nor yet in such way as to have received from thy very act all the profit. For what more dost thou want when thou hast done a man a service? Art thou not content that thou hast done something conformable to thy nature, and dost thou seek to be paid for it? Just as if the eye demanded a recompense for seeing, or the feet for walking. For as these members are formed for a particular purpose, and by working according to their several constitutions obtain what is their own; so also as man is formed by nature to acts of benevolence, when he has done anything benevolent or in any other way conducive to the common interest, he has acted conformably to his constitution, and he gets what is his own.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./book-8.html" class="pagination-link" aria-label="Book Eight">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Book Eight</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./book-10.html" class="pagination-link" aria-label="Book Ten">
+        <span class="nav-page-text">Book Ten</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

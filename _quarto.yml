@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "The Meditations"
+  author: "Marcus Aurelius"
+  favicon: favicon.png
+  cover-image: cover.png  
+  search:
+    type: overlay
+  chapters:
+    - index.qmd
+    - book-1.qmd
+    - book-2.qmd
+    - book-3.qmd
+    - book-4.qmd
+    - book-5.qmd
+    - book-6.qmd
+    - book-7.qmd
+    - book-8.qmd
+    - book-9.qmd
+    - book-10.qmd
+    - book-11.qmd
+    - book-12.qmd
+format:
+  html:
+    toc: false
+    fontsize: 22px
+    theme:
+      dark: [darkly, theme.css]
+      light: [cosmo, theme.css]
+
+  epub:
+    epub-cover-image: cover.png
+    toc-depth: 1

@@ -1,0 +1,25 @@
+/*-- scss:defaults --*/
+
+main p {
+  text-align: justify !important;
+}
+
+main h1, main li, main blockquote {
+  text-indent: 0;
+}
+
+main li {
+  text-align: left;
+}
+
+main a {
+  text-decoration: none;
+}
+
+#title-block-header.quarto-title-block.default .quarto-title h1.title {
+  margin-bottom: 1em;
+}
+
+main h2 {
+  font-size: 1em;
+}
